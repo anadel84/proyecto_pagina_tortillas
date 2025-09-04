@@ -1,0 +1,357 @@
+
+  body  {
+     font-family: 'Segoe UI', sans-serif; margin:0; padding:0; background:#fffef9; color:#333; }
+   
+  header {
+    
+   background-image: url(../imagenes/tortilla-española.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 15px;
+    width: auto;
+    height: 400px;
+  
+  }
+
+  /* Ajustar logo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 120px; /* más pequeño en móvil */
+  }
+
+  header .text-center {
+    margin-top: 1rem; /* espacio extra para que no choque */
+  }
+
+  h1.display-3 {
+    font-size: 2rem; /* reducir el tamaño del h1 en móvil */
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+.navbar-toggler {
+  border-color: #ff914d; 
+  
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='orange' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Navbar transparente */
+.navbar {
+  background-color: transparent !important;
+}
+
+/* Opcional: si tu header tenía fondo oscuro */
+.headerform {
+  background-color: transparent !important;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5); /* negro con 50% de opacidad */
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem; /* opcional: bordes redondeados */
+}
+
+/* Enlaces más visibles */
+.navbar-nav .nav-link {
+  color: #fff;          
+  font-weight: 700;       
+  transition: color 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f5c57d;
+}
+
+
+  .bg-secondary {
+
+    background-color: #ff914d !important;
+  }
+
+  .bg-primary {
+
+    background-color:#f5c57d !important;
+  }
+
+  .bg-white {
+
+    background-color:#ffe5b4 !important ;
+  }
+
+  .headerform {
+
+    background-color:#ff914d ;
+
+
+  }
+    
+  section {
+    
+    padding:2rem 1rem; max-width:1200px; margin:auto; }
+
+/* contenido carrousel */
+/*como ningun carrousel encajaba y quedaba desconfigurado:
+
+/*sacado de la pagina https://codingyaar.com/bootstrap-carousel-multiple-items-increment-by-1/ */
+
+.carousel-inner {
+
+  padding: 1em;
+}
+.card {
+
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+@media (min-width: 768px) {
+
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+
+}
+.card .img-wrapper {
+
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card img {
+
+    max-height: 100%;
+    object-fit: cover;
+
+}
+
+.enlace-carrousel {
+
+  text-decoration: none;     
+  color: #ff914d;            
+  font-weight: 600;
+  transition: color 0.3s ease;
+
+}
+
+.enlace-carrousel a:hover {
+   color: #f5c57d;            
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+  .card .img-wrapper {
+    height: 17em;
+  }
+
+}
+
+.carousel .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel .card-body {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel .card-body .btn {
+  margin-top: auto; 
+}
+
+.btn-primary {
+
+  background-color: #ff914d !important;
+}
+
+.enlace {
+  list-style-type: none;
+}
+
+
+
+/* ---------------- */
+    
+  section h2 { 
+    
+    color:#a65c00; margin-bottom:1rem; }
+  
+  .foto { 
+    
+    width:100%; border-radius:8px; margin-top:1rem; }
+   
+  .form-container {
+
+      background: #fff9f2;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      animation: bounceIn 1s ease;
+
+    }
+
+    h2 {
+
+      margin-bottom: 15px;
+
+    }
+
+    .option {
+
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 1.1em;
+
+    }
+
+    .option:hover {
+
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    }
+
+    .cebolla {
+
+      background: #ffe5b4;
+
+    }
+
+    .no-cebolla {
+
+      background: #fbc4ab;
+
+    }
+
+    button {
+
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      background: #ff914d;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+
+    }
+
+    button:hover {
+
+      background: #ff5e00;
+      transform: scale(1.1);
+
+    }
+
+    @keyframes bounceIn {
+
+      0% { transform: scale(0.5); opacity: 0; }
+      80% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+
+    }
+
+    /*ruta *//*para ajustarlo le he pedido ayuda al chat gpt*/
+
+    .img-container {
+    height: 200px;        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;     
+  }
+
+  .pincho-img {
+    max-height: 100%;    
+    width: auto;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  /* Opcional: ajustar altura en móviles */
+  @media (max-width: 640px) {
+    .img-container {
+      height: 150px;
+    }
+  }
+   
+  footer { 
+    
+    background:#f5c57d; color:#fff; text-align:center; padding:1.5rem; }
+   
+ .social a {
+    
+    margin:0 .5rem; color:#fff; text-decoration:none; }
+
+    .map-container iframe {
+    
+    border:0; margin-top:1rem; }
+
+    /* css pagina formulario*/
+
+    div.gallery {
+
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+
+}
+
+div.gallery:hover {
+
+  border: 1px solid #777;
+
+}
+
+div.gallery img {
+
+  width: 100%;
+  height: auto;
+
+}
+
+div.desc {
+
+  padding: 15px;
+  text-align: center;
+  
+}
+  
